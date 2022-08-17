@@ -16,6 +16,7 @@ namespace UserRegistrationProblem
             validateUser.validateLastName("Das");
             validateUser.validateEmailId("anishadas880@gmail.com");
             validateUser.validateMobileNumber("9178009885");
+            validateUser.validatePassword("Anisha@987");
             Console.ReadKey();
         }
     }
