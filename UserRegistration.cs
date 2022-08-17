@@ -25,5 +25,13 @@ namespace UserRegistratiponProblem
             else
                 Console.WriteLine(lastName + " is Invalid");
         }
+        public void validateEmailId(string emailID)
+        {
+            string stringForEmailId = "^[a-z0-9][-a-z0-9]+@([a-z]+.)+[a-z]{2,5}$";
+            if (Regex.IsMatch(emailID, stringForEmailId))
+                Console.WriteLine(emailID + " is Valid");
+            else
+                Console.WriteLine(emailID + " is Invalid");
+        }
     }
 }
