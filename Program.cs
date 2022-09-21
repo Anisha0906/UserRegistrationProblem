@@ -17,7 +17,8 @@ namespace UserRegistrationProblem
             validateUser.validateEmailId("anishadas880@gmail.com");
             validateUser.validateMobileNumber("9178009885");
             validateUser.validatePassword("Anisha@987");
-            validateUser.validateUperCasePassword("Anisha@987");
+            validateUser.validateUperCasePassword("AnishaDas@987");
+            validateUser.validateNumericPassword("Anisha@9987");
             Console.ReadKey();
         }
     }

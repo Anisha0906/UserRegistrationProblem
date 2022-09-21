@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace UserRegistratiponProblem
 {
@@ -56,6 +51,14 @@ namespace UserRegistratiponProblem
                 Console.WriteLine(ucPassword + " is Valid");
             else
                 Console.WriteLine(ucPassword + " is Invalid");
+        }
+        public void validateNumericPassword(string NumericPassword)
+        {
+            string stringForNumericPassword = "^.{8,}?";
+            if (Regex.IsMatch(NumericPassword, stringForNumericPassword))
+                Console.WriteLine(NumericPassword + " is Valid");
+            else
+                Console.WriteLine(NumericPassword + " is Invalid");
         }
     }
 }
